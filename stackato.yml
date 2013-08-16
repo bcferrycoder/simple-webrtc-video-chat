@@ -1,0 +1,8 @@
+name: simple-webrtc-video-chat
+framework:
+  type: node
+
+mem: 256M
+
+processes:
+  web: ./node_modules/coffee-script/bin/coffee app.coffee
