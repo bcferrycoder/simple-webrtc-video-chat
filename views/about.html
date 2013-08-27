@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Stackato / WebRTC Demo</title>
+  </head>
+
+  <body>
+    <h1>Stackato / WebRTC Demo</h1>
+
+    <p>
+      This is a basic video/audio chat demo using WebRTC, originally 
+      forked from <a
+	href="https://github.com/keithnorm/simple-webrtc-video-chat.git">https://github.com/keithnorm/simple-webrtc-video-chat.git</a>.</p>
+
+    <p>
+        To create a chat room simply choose a name for it and append
+        it to the URL string you used to access this page.  Or you can
+        join the <a href="/stackato">Stackato</a> chat room. Then
+        provide the full URL to another user. When the second user
+        visits this same URL, and grants access to the
+        camera/microphone, two video windows will appear, one for each
+        participant. Use headphones or mute your mic, otherwise you'll
+        be accosted with feedback.
+    </p>
+
+    <h2>Limitations</h2>
+
+    <ul>
+      <li>
+	Audio feedback: mute your mike
+      </li>
+      <li>
+	Tested only on Chrome
+      </li>
+      <li>
+	Scaling out multiple instances of this app will cause problems
+	as each app instance maintains its own chat rooms. Works fine
+	with one app instance.
+      </li>
+    </ul>
+
+  </body>
+</html>

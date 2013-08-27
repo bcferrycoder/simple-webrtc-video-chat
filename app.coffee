@@ -8,6 +8,9 @@ app.use express.static './public'
 app.get '/:room', (req, res) ->
   res.render 'index.jade', params: req.query, room_count: io.clientsByRoom[req.params.room]?.length || 0
 
+app.get '/', (req, res) ->
+  res.render 'about.jade', params: req.query, room_count: io.clientsByRoom[req.params.room]?.length || 0
+
 server =  app.listen process.env.PORT
 
 io = ws.attach server
